@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: myapp-deployment
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: myapp
   replicas: 4
   template:
     metadata:
       labels:
-        app: nginx
+        app: myapp
     spec:
       containers:
-        - name: nginx
+        - name: myapp
           image: us-central1-docker.pkg.dev/black-anagram-431013-u8/docker-repository/myapp:1.0.0
           ports:
-            - containerPort: 80
+            - containerPort: 3000
