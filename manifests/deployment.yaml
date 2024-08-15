@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: sample-app
-          image: us-central1-docker.pkg.dev/your-project-id/black-anagram-431013-u8/sample-app:1.0.0
+          image: us-central1-docker.pkg.dev/black-anagram-431013-u8/sample-app/sample-app:1.0.0
           ports:
             - containerPort: 3000
